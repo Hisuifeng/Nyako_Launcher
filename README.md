@@ -68,8 +68,9 @@ The application ID used for these requests is
 
 ## Download and run
 
-1. Open the [Releases](../../releases) page and download the latest
-   `NyakoLauncher-<version>-win-x64.zip`.
+1. Download
+   [NyakoLauncher-0.1.0-win-x64.zip](https://github.com/Hisuifeng/Nyako_Launcher/releases/download/v0.1.0/NyakoLauncher-0.1.0-win-x64.zip)
+   (about 5 MB) from the [Releases](../../releases) page.
 2. Extract it anywhere and run `nyako-launcher.exe`.
    The build is portable: launcher data is kept in `.nyako` under the working directory, game
    files in `.minecraft` (both are created on first start).
