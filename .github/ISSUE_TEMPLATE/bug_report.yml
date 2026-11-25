@@ -1,0 +1,74 @@
+name: Bug 报告
+description: 启动器崩溃、启动失败、下载或界面异常
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        提交前请先搜索已有 issue。日志请先脱敏（删除账号名、token、服务器地址）再粘贴。
+  - type: input
+    id: version
+    attributes:
+      label: 启动器版本
+      description: 在「关于」页可以看到完整版本号
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: dropdown
+    id: channel
+    attributes:
+      label: 更新通道
+      options:
+        - 稳定版
+        - 预览版
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows 版本
+      placeholder: Windows 11 23H2 x64
+    validations:
+      required: true
+  - type: input
+    id: java
+    attributes:
+      label: Java 版本与来源
+      description: 例如 Temurin 21 x64 / Oracle 17 x64 / 启动器自动安装
+      placeholder: Temurin 21.0.5 x64
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 问题描述
+      description: 实际发生了什么，出现在哪个页面或哪一步
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 打开……
+        2. 点击……
+        3. 出现……
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日志与截图
+      description: "%LOCALAPPDATA%\\NyakoLauncher\\logs\\launcher.log 的末尾片段，或直接拖入文件"
+      render: text
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认
+      options:
+        - label: 我已搜索过已有 issue，且日志中不含账号、token 等隐私信息
+          required: true
